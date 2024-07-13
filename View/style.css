@@ -1,0 +1,29 @@
+*body {
+    padding: 10px;
+    background-color: #2a4858;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+}
+
+.special-class {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.specialHover:hover {
+    border-bottom: red solid 2px;
+}
+
+.btn-Hire {
+    background-color: rgb(58, 4, 58);
+    border: white solid 2px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.btn-Hire:hover {
+    background-color: white;
+    color: black;
+    border: red solid 2px;
+}
