@@ -20,12 +20,19 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
         <!-- Google font end -->
+        <!-- Color works start -->
+        <style>
+            .text-goldenrod {
+                color: goldenrod;
+            }
+        </style>
+        <!-- Color works End -->
     </head>
 
     <body class="bg-black p-10">
         <!-- Nav Section with design -->
         <section>
-            <div class="navbar text-white special-class">
+            <div class="navbar text-white special-class lg:text-white">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -36,7 +43,7 @@
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
+                            class="menu menu-sm dropdown-content bg-black-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
                             <li class="specialHover special-class"><a href="#Home">Home</a></li>
                             <li class="specialHover"><a href="#Service">Service</a></li>
                             <li class="specialHover"><a href="#AboutMe">About Me</a></li>
@@ -68,10 +75,10 @@
             <div>
                 <h4 class="text-4xl text-white">Hello I am</h4>
                 <h1 class="text-6xl text-orange-400 py-5 special-class">Joydep Dhar</h1>
-                <h4>Software Engineer, Tech Enthusiast , Entrepreneur.</h4>
+                <h4 class="text-cyan-600">Software Engineer, Tech Enthusiast , Entrepreneur.</h4>
                 <p class="py-3.5 text-xl text-white">Passionate web developer from Bangladesh. <br> specializing in
-                    <span class="text-purple-950">C# programming</span> and
-                    <span class="text-purple-950">Asp.Net Programming</span> <br>
+                    <span class="text-goldenrod">C# programming</span> and
+                    <span class="text-goldenrod">Asp.Net Programming</span> <br>
                     Crafting
                     seamless digital experiences with a
                     cup of coffee in hand.
@@ -135,52 +142,52 @@
         </section>
         <!-- Skills Section End -->
         <!-- Project Section Start -->
-        <section id="MyProjects" class="my-2 p-20">
-            <h1 class="text-4xl items-center text-white mb-4">Academic Project I Did:</h1>
-            <div class="py-10 my-10 lg:flex gap-5 px-5">
-                <div class="btn-Hire">
-                    <div class="card card-compact p-10 bg-base-100 w-96 shadow-xl">
-                        <figure>
-                            <img src="../Resource/LibraryManagementSystemByCSharp.PNG"
-                                alt="LibraryManagementSystemByC#" />
-                        </figure>
-                        <div class="card-body">
-                            <h2 class="card-title">Library Management System</h2>
-                            <p>Language: C#</p>
-                            <p>Window Applications</p>
-                            <div class="card-actions justify-end">
-                                <button class="btn btn-primary">View Git</button>
-                            </div>
+        <h1 class="text-4xl text-white p-10 items-center">My academic Project</h1>
+        <section class="lg:flex gap-10 ">
+            <div>
+                <div class="card lg:card-side shadow-xl supercard text-white academicproject p-10">
+                    <figure>
+                        <img src="../Resource/zeroHungerProject.PNG" alt="Album" class="zero-hunger" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">ZeroHungerProject</h2>
+                        <p>Programming Language: C#</p>
+                        <p>Project Type: Website</p>
+                        <p>Other Language: Html,Css, TailwindCss</p>
+                        <p>Framework:Asp.Net MVC</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Visit Git</button>
                         </div>
                     </div>
                 </div>
-                <div class="btn-Hire">
-                    <div class="card card-compact p-10 py-16 bg-base-100 w-96 shadow-xl">
-                        <figure>
-                            <img src="../Resource/zeroHungerProject.PNG" alt="zeroHungerProject" />
-                        </figure>
-                        <div class="card-body">
-                            <h2 class="card-title">ZeroHungerProject</h2>
-                            <p>Language: C#</p>
-                            <p>Framework:Asp.Net MVC</p>
-                            <div class="card-actions justify-end">
-                                <button class="btn btn-primary">View Git</button>
-                            </div>
+            </div>
+            <div>
+                <div class="card lg:card-side shadow-xl supercard text-white academicproject p-10">
+                    <figure>
+                        <img src="../Resource/BackEndProject.PNG" alt="StoreManagementSystem" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Store Management System</h2>
+                        <p>Programming Language: C#</p>
+                        <p>Project Type: API</p>
+                        <p>Framework: Asp.Net WindowForm</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Visit Git</button>
                         </div>
                     </div>
                 </div>
-                <div class="btn-Hire">
-                    <div class="card card-compact py-6 bg-base-100 w-96 shadow-xl">
-                        <figure>
-                            <img src="../Resource/BackEndProject.PNG" alt="BackEndProject" />
-                        </figure>
-                        <div class="card-body">
-                            <h2 class="card-title">Store Management System</h2>
-                            <p>Language: C#</p>
-                            <p>Framework: Asp.Net (API)</p>
-                            <div class="card-actions justify-end">
-                                <button class="btn btn-primary">View Git</button>
-                            </div>
+            </div>
+            <div>
+                <div class="card lg:card-side supercard bg-black shadow-xl text-white academicproject p-10">
+                    <figure>
+                        <img src="../Resource/LibraryManagementSystemByCSharp.PNG" alt="LibraryManagementSystemByC#" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Library Management System</h2>
+                        <p>Programming Language: C#</p>
+                        <p>Project Type: Windows Applications</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Visit Git</button>
                         </div>
                     </div>
                 </div>

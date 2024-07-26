@@ -27,3 +27,26 @@
     color: black;
     border: red solid 2px;
 }
+
+.academicproject:hover {
+    background-color: wheat;
+    border: 2px red solid;
+    color: black;
+}
+
+/* .academicproject img {
+    width: 100%;
+} */
+
+.academicproject {
+    border: rebeccapurple solid 2px;
+    border-radius: 15px;
+}
+
+/* .zero-hunger img {
+    width: 50%;
+} */
+.supercard {
+    width: 440px;
+    height: 480px;
+}
