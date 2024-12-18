@@ -1,223 +1,536 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joydep Dhar</title>
+    <!-- Css Connection start -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Css Connection End -->
+    <!-- Tailwind Css Start -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Css End -->
+    <!-- Daisy UI start -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Daisy UI End -->
+    <!-- Google font start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google font end -->
+    <!-- Color works start -->
+    <style>
+      .text-goldenrod {
+        color: goldenrod;
+      }
+    </style>
+    <!-- Color works End -->
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Joydep Dhar</title>
-        <!-- Css Connection start -->
-        <link rel="stylesheet" href="style.css">
-        <!-- Css Connection End -->
-        <!-- Tailwind Css Start -->
-        <script src="https://cdn.tailwindcss.com"></script>
-        <!-- Tailwind Css End -->
-        <!-- Daisy UI start -->
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <!-- Daisy UI End -->
-        <!-- Google font start -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-        <!-- Google font end -->
-        <!-- Color works start -->
-        <style>
-            .text-goldenrod {
-                color: goldenrod;
-            }
-        </style>
-        <!-- Color works End -->
-    </head>
+  <body class="bg-black p-10">
+    <!-- Nav Section with design -->
+    <nav class="navbar bg-black py-5 px-4 lg:px-20">
+      <div class="navbar-start">
+        <div class="dropdown lg:hidden">
+          <label tabindex="0" class="btn btn-ghost">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 p-2 bg-black rounded-box shadow text-white"
+          >
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Service">Service</a></li>
+            <li><a href="#AboutMe">About Me</a></li>
+            <li><a href="#MyProjects">My Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+        <a class="text-xl font-bold text-white">Joydep Dhar</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal space-x-8 text-white">
+          <li><a href="#Home" class="hover:text-orange-400">Home</a></li>
+          <li><a href="#Service" class="hover:text-orange-400">Service</a></li>
+          <li><a href="#AboutMe" class="hover:text-orange-400">About Me</a></li>
+          <li>
+            <a href="#MyProjects" class="hover:text-orange-400">My Projects</a>
+          </li>
+          <li><a href="#Contact" class="hover:text-orange-400">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a
+          href="../Resource/JoydepDharCV.pdf"
+          class="btn btn-outline btn-primary"
+          >Hire Me</a
+        >
+      </div>
+    </nav>
 
-    <body class="bg-black p-10">
-        <!-- Nav Section with design -->
-        <section>
-            <div class="navbar text-white special-class lg:text-white">
-                <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-black-100 rounded-box z-[1] mt-3 w-52 p-2 shadow ">
-                            <li class="specialHover special-class"><a href="#Home">Home</a></li>
-                            <li class="specialHover"><a href="#Service">Service</a></li>
-                            <li class="specialHover"><a href="#AboutMe">About Me</a></li>
-                            <li class="specialHover"><a href="#MyProjects">My Projects</a></li>
-                            <li class="specialHover"><a href="#Contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <a class="btn btn-ghost text-xl special-class">Joydep Dhar</a>
-                </div>
-                <div class="navbar-center hidden lg:flex gap-5 special-class">
-                    <ul class="menu menu-horizontal px-1 special-class">
-                        <li class="specialHover "><a href="#Home">Home</a></li>
-                        <li class="specialHover "><a href="#Service">Service</a></li>
-                        <li class="specialHover"><a href="#AboutMe">About Me</a></li>
-                        <li class="specialHover"><a href="#MyProjects">My Projects</a></li>
-                        <li class="specialHover"><a href="#Contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-end">
+    <!-- Nav Section with design End -->
+    <!-- Home Section start -->
+    <section
+      id="Home"
+      class="flex flex-col-reverse lg:flex-row items-center px-6 lg:px-20 py-10"
+    >
+      <div class="space-y-6 text-center lg:text-left lg:w-1/2">
+        <h4 class="text-3xl lg:text-4xl font-bold text-white">Hello, I am</h4>
+        <h1 class="text-5xl lg:text-6xl text-orange-600 font-extrabold">
+          Joydep Dhar
+        </h1>
+        <h4 class="text-cyan-500 text-xl">
+          Software Engineer, Tech Enthusiast, Entrepreneur
+        </h4>
+        <p class="text-lg leading-relaxed text-gray-700">
+          Passionate web developer from Bangladesh specializing in
+          <span class="text-yellow-400">C#</span> and
+          <span class="text-yellow-400">ASP.NET</span>. Crafting seamless
+          digital experiences with coffee in hand.
+        </p>
+        <a
+          href="../Resource/JoydepDharCV.pdf"
+          class="btn bg-purple-600 text-white hover:bg-purple-400"
+          download="JoydepDhar_CV"
+          >Download CV</a
+        >
+      </div>
+      <div class="flex justify-center lg:w-1/2">
+        <img
+          src="../Resource/profile-pic (1).png"
+          alt="Profile Picture"
+          class="w-64 lg:w-[400px] rounded-full shadow-lg"
+        />
+      </div>
+    </section>
+    <!-- Home Section ends -->
+    <!-- About Section Start -->
+    <!-- About Me Section -->
+    <section
+      id="AboutMe"
+      class="py-16 px-6 lg:px-20 flex flex-col lg:flex-row items-center gap-12 lg:gap-40 bg-gradient-to-b from-gray-800 to-gray-900"
+    >
+      <!-- Profile Picture -->
+      <div
+        data-aos="fade-right"
+        data-aos-duration="1000"
+        class="relative group hover:scale-105 transform transition-all duration-300"
+      >
+        <img
+          src="../Resource/profile-pic2ndpart.png"
+          alt="Profile Picture"
+          class="w-64 h-64 rounded-full shadow-xl border-4 border-cyan-600"
+        />
+        <div
+          class="absolute inset-0 bg-cyan-600 opacity-0 group-hover:opacity-20 rounded-full transition-opacity duration-300"
+        ></div>
+      </div>
 
-                    <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" class="btn">Hire
-                        Me</a>
-                </div>
-            </div>
-        </section>
-        <!-- Nav Section with design End -->
-        <!-- Home Section start -->
-        <section id="Home" class="lg:flex justify-center items-center">
-            <div>
-                <h4 class="text-4xl text-white">Hello I am</h4>
-                <h1 class="text-6xl text-orange-400 py-5 special-class">Joydep Dhar</h1>
-                <h4 class="text-cyan-600">Software Engineer, Tech Enthusiast , Entrepreneur.</h4>
-                <p class="py-3.5 text-xl text-white">Passionate web developer from Bangladesh. <br> specializing in
-                    <span class="text-goldenrod">C# programming</span> and
-                    <span class="text-goldenrod">Asp.Net Programming</span> <br>
-                    Crafting
-                    seamless digital experiences with a
-                    cup of coffee in hand.
-                </p>
-                <div>
-                    <button class="btn-Hire text-2xl text-white flex align-middle items-center gap-2">
-                        <a href="../Resource/JoydepDharCV.pdf" target="_blank"
-                            class="text-xl flex align-middle items-center gap-2" rel="noopener noreferrer"><svg
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
-                            </svg>
-                            Download CV</a></button>
-                </div>
-            </div>
-            </div>
-            <div>
-                <img src="../Resource/profile-pic (1).png" alt="">
-            </div>
-        </section>
-        <!-- Home Section start -->
-        <!-- About Section Start -->
-        <section id="AboutMe"
-            class="text-white py-50 flex-row m-10 lg:flex gap-x-40 align-middle justify-center items-center">
-            <div>
-                <img src="../Resource/profile-pic2ndpart.png" alt="">
-            </div>
-            <div class="text-xl">
-                <p>Hello I'm Joydep Dhar, a passionate software Engineer.</p>
-                <p>I am a passionate developer specializing in creating exceptional websites and web applications. <br>
-                    My
-                    expertise lies in
-                    delivering intuitive, pixel-perfect user interfaces and building efficient, modern backends. <br>I
-                    have a
-                    strong preference
-                    for using <span class="text-orange-500">C# with ASP.NET and Python</span> , and I am skilled in
-                    integrating <span class="text-orange-500">machine learning</span> solutions
-                    into my projects. <br>
-                    I am graduated from American International University-Bangladesh(AIUB)</p>
-                <p>My major was <span class="text-orange-500">Software Engineering</span>. Here I am today!</p>
+      <!-- About Me Content -->
+      <div
+        class="text-lg max-w-2xl"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
+        <h1
+          class="text-5xl font-bold text-cyan-500 mb-6 special-class text-center lg:text-left"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+        >
+          About Me
+        </h1>
 
-            </div>
-            </div>
-        </section>
-        <!-- About Section END -->
-        <!-- Skills Section Start -->
-        <section id="Service" class="my-5 p-20">
-            <h1 class=" text-4xl items-center gap-2 text-white mb-4">
-                Service I like to Do
-            </h1>
-            <ul class="text-2xl text-white list-disc pl-5">
+        <p class="mb-6 leading-relaxed text-gray-300">
+          Hello, I'm
+          <span class="font-semibold text-orange-400">Joydep Dhar</span>, a
+          passionate software engineer with a strong commitment to crafting
+          exceptional digital experiences.
+        </p>
 
-                <li>Website Development with Asp.Net MVC</li>
-                <li>Website Development with Asp.Net Window Forms</li>
-                <li>Window Applications Development with C#</li>
-                <li>Website Development with Html, Css , JavaScript</li>
-                <li>Quality Testing (QT) and Quality Assurance (QA)</li>
-                <li>Project Management</li>
-            </ul>
-        </section>
-        <!-- Skills Section End -->
-        <!-- Project Section Start -->
-        <h1 class="text-4xl text-white p-10 items-center">My Academic Project</h1>
-        <section id="MyProjects" class="lg:flex gap-10  items-center align-middle">
-            <div>
-                <div class="card lg:card-side shadow-xl supercard text-white academicproject p-10">
-                    <figure>
-                        <img src="../Resource/zeroHungerProject.PNG" alt="Album" class="zero-hunger" />
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">ZeroHungerProject</h2>
-                        <p>Programming Language: C#</p>
-                        <p>Project Type: Website</p>
-                        <p>Other Language: Html,Css, TailwindCss</p>
-                        <p>Framework:Asp.Net MVC</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Visit Git</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="card lg:card-side shadow-xl supercard text-white academicproject p-10">
-                    <figure>
-                        <img src="../Resource/BackEndProject.PNG" alt="StoreManagementSystem" />
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Store Management System</h2>
-                        <p>Programming Language: C#</p>
-                        <p>Project Type: API</p>
-                        <p>Framework: Asp.Net WindowForm</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Visit Git</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="card lg:card-side supercard bg-black shadow-xl text-white academicproject p-10">
-                    <figure>
-                        <img src="../Resource/LibraryManagementSystemByCSharp.PNG" alt="LibraryManagementSystemByC#" />
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Library Management System</h2>
-                        <p>Programming Language: C#</p>
-                        <p>Project Type: Windows Applications</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Visit Git</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Project Section End -->
-        <!-- Contact Me Section Start -->
-        <section id="Contact" class="mt-4 text-center text-white py-10">
-            <h1 class="text-center text-4xl text-white">Contact Me</h1>
-            <div>
-                <h1 class="text-2xl"> Hungry for Listening New idea</h1>
-                <h1 class="text-2xl">Email Me: joydep.cse.aiub@gmail.com</h1>
-                <h1 class="text-2xl">Connect Me with Social Media</h1>
-                <div class="flex gap-3 items-center align-middle justify-center">
-                    <h1><a href="https://www.facebook.com/profile.php?id=61559605496980" target="_blank"
-                            rel="noopener noreferrer"><i class="fa-brands fa-square-facebook"></i></a></h1>
-                    <h1><a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer"><i
-                                class="fa-brands fa-linkedin"></i></a></h1>
-                    <h1><i class="fa-brands fa-youtube"></i></h1>
-                </div>
-            </div>
-        </section>
-        <!-- Contact Me Section End -->
-        <footer class="text-center text-white py-10">
-            CopyWrite@JoydepDhar2024
-        </footer>
+        <p class="mb-6 leading-relaxed text-gray-300">
+          I specialize in building intuitive, pixel-perfect user interfaces and
+          robust backends for modern web applications. My work combines
+          creativity and functionality to deliver impactful solutions.
+        </p>
 
-        <!-- fontAwesome -->
-        <script src=" https://kit.fontawesome.com/7a6f40b5f1.js" crossorigin="anonymous">
-        </script>
-    </body>
+        <p class="mb-6 leading-relaxed text-gray-300">
+          My technical expertise includes
+          <span class="font-semibold text-orange-400">C# with ASP.NET</span> and
+          <span class="font-semibold text-orange-400">Python</span>. I also
+          leverage
+          <span class="font-semibold text-orange-400">Machine Learning</span> to
+          infuse intelligent capabilities into projects.
+        </p>
 
+        <p class="mb-6 leading-relaxed text-gray-300">
+          I am a proud graduate of
+          <span class="font-semibold text-orange-400"
+            >American International University-Bangladesh (AIUB)</span
+          >
+          with a major in
+          <span class="font-semibold text-orange-400">Software Engineering</span
+          >.
+        </p>
+
+        <p class="leading-relaxed text-gray-300">
+          My journey in software engineering is driven by curiosity, creativity,
+          and a passion for innovation. I am always ready to take on challenges
+          and create something truly amazing!
+        </p>
+
+        <!-- Optional: Add a Call-to-Action Button -->
+        <!-- Include Animate.css for animations -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+
+        <div class="mt-12 text-center">
+          <!-- Animated Title -->
+          <h2
+            class="text-4xl font-bold text-cyan-500 mb-6 animate__animated animate__fadeInDown"
+          >
+            Let's Connect
+          </h2>
+
+          <!-- Social Links -->
+          <div class="flex justify-center space-x-6">
+            <!-- Facebook Link -->
+            <a
+              href="https://facebook.com/yourprofile"
+              target="_blank"
+              class="px-4 py-3 bg-cyan-600 text-white font-semibold rounded-lg shadow-lg hover:bg-cyan-500 transition-transform transform hover:scale-105 flex items-center space-x-2"
+            >
+              <i class="fab fa-facebook-f"></i>
+              <span>Facebook</span>
+            </a>
+
+            <!-- LinkedIn Link -->
+            <a
+              href="https://linkedin.com/in/yourprofile"
+              target="_blank"
+              class="px-4 py-3 bg-cyan-600 text-white font-semibold rounded-lg shadow-lg hover:bg-cyan-500 transition-transform transform hover:scale-105 flex items-center space-x-2"
+            >
+              <i class="fab fa-linkedin-in"></i>
+              <span>LinkedIn</span>
+            </a>
+
+            <!-- YouTube Link -->
+            <a
+              href="https://youtube.com/yourchannel"
+              target="_blank"
+              class="px-4 py-3 bg-cyan-600 text-white font-semibold rounded-lg shadow-lg hover:bg-cyan-500 transition-transform transform hover:scale-105 flex items-center space-x-2"
+            >
+              <i class="fab fa-youtube"></i>
+              <span>YouTube</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section END -->
+    <!-- Skills Section Start -->
+    <!-- Service Section -->
+    <section id="Service" class="my-10 px-6 py-16 lg:px-20">
+      <!-- Heading -->
+      <div class="text-center mb-10">
+        <h1
+          class="text-5xl font-bold text-cyan-500 inline-block border-b-4 border-cyan-600 pb-2"
+        >
+          Services I Like to Do
+        </h1>
+      </div>
+
+      <!-- Service List -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card 1 -->
+        <div
+          class="bg-gray-800 rounded-lg p-6 text-center hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <i class="fas fa-code text-4xl text-yellow-400 mb-4"></i>
+          <h2 class="text-2xl font-semibold mb-2">ASP.NET MVC Websites</h2>
+          <p class="text-gray-300">
+            Develop responsive and scalable web applications using ASP.NET MVC.
+          </p>
+          <div class="mt-4 text-yellow-400">★ ★ ★ ★ ★</div>
+        </div>
+
+        <!-- Card 2 -->
+        <div
+          class="bg-gray-800 rounded-lg p-6 text-center hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <i class="fas fa-laptop-code text-4xl text-green-400 mb-4"></i>
+          <h2 class="text-2xl font-semibold mb-2">ASP.NET Windows Forms</h2>
+          <p class="text-gray-300">
+            Create intuitive desktop applications using ASP.NET Windows Forms.
+          </p>
+          <div class="mt-4 text-yellow-400">★ ★ ★ ★ ★</div>
+        </div>
+
+        <!-- Card 3 -->
+        <div
+          class="bg-gray-800 rounded-lg p-6 text-center hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <i class="fas fa-desktop text-4xl text-blue-400 mb-4"></i>
+          <h2 class="text-2xl font-semibold mb-2">Windows Applications</h2>
+          <p class="text-gray-300">
+            Develop efficient and feature-rich Windows desktop applications with
+            C#.
+          </p>
+          <div class="mt-4 text-yellow-400">★ ★ ★ ★ ★</div>
+        </div>
+
+        <!-- Card 4 -->
+        <div
+          class="bg-gray-800 rounded-lg p-6 text-center hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <i class="fas fa-paint-brush text-4xl text-pink-400 mb-4"></i>
+          <h2 class="text-2xl font-semibold mb-2">HTML, CSS, JavaScript</h2>
+          <p class="text-gray-300">
+            Build modern, responsive websites with front-end technologies.
+          </p>
+          <div class="mt-4 text-yellow-400">★ ★ ★ ★ ★</div>
+        </div>
+
+        <!-- Card 5 -->
+        <div
+          class="bg-gray-800 rounded-lg p-6 text-center hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <i class="fas fa-check-circle text-4xl text-purple-400 mb-4"></i>
+          <h2 class="text-2xl font-semibold mb-2">QT & QA Testing</h2>
+          <p class="text-gray-300">
+            Ensure quality with robust Quality Testing (QT) and Quality
+            Assurance (QA).
+          </p>
+          <div class="mt-4 text-yellow-400">★ ★ ★ ★ ★</div>
+        </div>
+
+        <!-- Card 6 -->
+        <div
+          class="bg-gray-800 rounded-lg p-6 text-center hover:shadow-lg hover:scale-105 transition-all duration-300"
+        >
+          <i class="fas fa-tasks text-4xl text-red-400 mb-4"></i>
+          <h2 class="text-2xl font-semibold mb-2">Project Management</h2>
+          <p class="text-gray-300">
+            Streamline project workflows for efficient and on-time delivery.
+          </p>
+          <div class="mt-4 text-yellow-400">★ ★ ★ ★ ★</div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section End -->
+    <!-- Project Section Start -->
+    <section id="MyProjects" class="px-6 lg:px-20 py-10 bg-gray-800">
+      <h1 class="text-4xl font-bold text-center text-orange-400 mb-6">
+        My Academic Projects
+      </h1>
+      <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Zero Hunger Project -->
+        <div
+          class="bg-gray-900 rounded-lg p-4 shadow-lg hover:scale-105 hover:shadow-2xl transition-transform duration-500 group"
+        >
+          <img
+            src="../Resource/zeroHungerProject.PNG"
+            alt="Zero Hunger"
+            class="rounded-t-lg mb-4 transform group-hover:scale-110 transition-transform duration-500"
+          />
+          <h2 class="text-xl font-bold text-cyan-400 mb-2">
+            Zero Hunger Project
+          </h2>
+          <p class="mb-4 text-gray-400">Language: C#</p>
+          <p class="mb-4 text-gray-400">Framework: ASP.NET MVC</p>
+          <a
+            href="https://github.com/yourprofile/ZeroHungerProject"
+            target="_blank"
+            class="inline-block bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-400 transition-all duration-300"
+          >
+            View on GitHub
+          </a>
+        </div>
+        <!-- Store Management System -->
+        <div
+          class="bg-gray-900 rounded-lg p-4 shadow-lg hover:scale-105 hover:shadow-2xl transition-transform duration-500 group"
+        >
+          <img
+            src="../Resource/BackEndProject.PNG"
+            alt="Store Management"
+            class="rounded-t-lg mb-4 transform group-hover:scale-110 transition-transform duration-500"
+          />
+          <h2 class="text-xl font-bold text-cyan-400 mb-2">
+            Store Management System
+          </h2>
+          <p class="mb-4 text-gray-400">Language: C#</p>
+          <a
+            href="https://github.com/yourprofile/StoreManagementSystem"
+            target="_blank"
+            class="inline-block bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-400 transition-all duration-300"
+          >
+            View on GitHub
+          </a>
+        </div>
+        <!-- Library Management System -->
+        <div
+          class="bg-gray-900 rounded-lg p-4 shadow-lg hover:scale-105 hover:shadow-2xl transition-transform duration-500 group"
+        >
+          <img
+            src="../Resource/LibraryManagementSystemByCSharp.PNG"
+            alt="Library System"
+            class="rounded-t-lg mb-4 transform group-hover:scale-110 transition-transform duration-500"
+          />
+          <h2 class="text-xl font-bold text-cyan-400 mb-2">
+            Library Management System
+          </h2>
+          <p class="mb-4 text-gray-400">Language: C#</p>
+          <a
+            href="https://github.com/yourprofile/LibraryManagementSystem"
+            target="_blank"
+            class="inline-block bg-purple-600 text-white px-4 py-2 rounded hover:bg-purple-400 transition-all duration-300"
+          >
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section End -->
+    <!-- Contact Me Section Start -->
+    <!-- Contact Section -->
+    <section class="py-16 px-6 lg:px-20" id="#Contact">
+      <div
+        class="max-w-6xl mx-auto bg-white shadow-lg rounded-lg flex flex-col lg:flex-row"
+      >
+        <!-- Left Section: Contact Info -->
+        <div
+          class="lg:w-1/3 bg-blue-700 text-white p-10 rounded-t-lg lg:rounded-l-lg lg:rounded-tr-none"
+        >
+          <h2 class="text-3xl font-bold mb-8 uppercase">Check Our Contact</h2>
+          <div class="space-y-6">
+            <!-- Address -->
+            <div class="flex items-center space-x-4">
+              <i class="fas fa-map-marker-alt text-3xl"></i>
+              <div>
+                <h3 class="font-semibold text-lg">Address</h3>
+                <p class="text-sm">Dhaka, Bangladesh</p>
+              </div>
+            </div>
+            <!-- Call Us -->
+            <div class="flex items-center space-x-4">
+              <i class="fas fa-phone-alt text-3xl"></i>
+              <div>
+                <h3 class="font-semibold text-lg">Email Us</h3>
+                <p class="text-sm">joydep.aiub.cse@gmail.com</p>
+              </div>
+            </div>
+            <!-- Email -->
+            <div class="flex items-center space-x-4">
+              <i class="fas fa-envelope text-3xl"></i>
+              <div>
+                <h3 class="font-semibold text-lg">For Business</h3>
+                <p class="text-sm">joydepdhar2002@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Section: Contact Form -->
+        <div class="lg:w-2/3 p-8">
+          <form class="space-y-6">
+            <!-- Name and Email Row -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-gray-700 font-medium mb-2"
+                  >Your Name</label
+                >
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transform duration-300 hover:scale-105"
+                />
+              </div>
+              <div>
+                <label class="block text-gray-700 font-medium mb-2"
+                  >Your Email</label
+                >
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transform duration-300 hover:scale-105"
+                />
+              </div>
+            </div>
+
+            <!-- Subject -->
+            <div>
+              <label class="block text-gray-700 font-medium mb-2"
+                >Subject</label
+              >
+              <input
+                type="text"
+                placeholder="Enter the subject"
+                class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transform duration-300 hover:scale-105"
+              />
+            </div>
+
+            <!-- Message -->
+            <div>
+              <label class="block text-gray-700 font-medium mb-2"
+                >Message</label
+              >
+              <textarea
+                rows="6"
+                placeholder="Enter your message"
+                class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transform duration-300 hover:scale-105"
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button
+              type="submit"
+              class="w-full md:w-auto px-8 py-3 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 focus:outline-none transform duration-300 hover:scale-105 shadow-lg"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- Contact Me Section End -->
+    <footer class="text-center text-white py-10">
+      CopyWrite@JoydepDhar2024
+    </footer>
+
+    <!-- fontAwesome -->
+    <script
+      src=" https://kit.fontawesome.com/7a6f40b5f1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
