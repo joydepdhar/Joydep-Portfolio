@@ -7,6 +7,6 @@ import tailwindcss from '@tailwindcss/vite'
 // site root, or a custom domain) without rebuilding.
 // Routing uses HashRouter, so deep links & refresh always resolve correctly.
 export default defineConfig({
-  base: './',
+  base:'/Joydep-Portfolio/',
   plugins: [react(), tailwindcss()],
 })
