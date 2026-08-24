@@ -42,6 +42,13 @@ This is the **only manual step**, done once per repository:
    - **Source:** `GitHub Actions`
    *(NOT "Deploy from a branch")*
 
+> ⚠️ **Most common mistake — causes a white blank page:**
+> Choosing **"Deploy from a branch" (main /root)**. That publishes the RAW repo
+> files, where `index.html` points at uncompiled `<script src="/src/main.jsx">`.
+> Browsers cannot execute `.jsx`, React never mounts, and you get a blank page.
+> If you did this: switch Source to **GitHub Actions**, then re-run the workflow
+> (see below).
+
 Done. The workflow now takes over permanently.
 
 ---
@@ -118,11 +125,29 @@ Pages Source to "Deploy from a branch → gh-pages".
 
 ## Troubleshooting
 
+### White / blank page after deploying
+
+Check what's actually being served:
+
+```bash
+curl -s https://joydepdhar.github.io/Joydep-Portfolio/ | grep script
+```
+
+- Sees `src="/src/main.jsx"` → **raw source is published** (wrong Pages Source).
+  Fix: Settings → Pages → Source → **GitHub Actions**, then re-run the workflow.
+- Sees `src="./assets/index-XXXX.js"` → correct build; hard-refresh browser.
+
+Re-run the workflow after fixing the Source:
+
+1. Repo → **Actions** → **Deploy to GitHub Pages** → **Run workflow** → **Run**
+2. Wait ~2 min for green ✅.
+
 | Problem | Fix |
 |---|---|
+| Workflow fails at "Deploy to GitHub Pages" step | Pages Source was not set to **GitHub Actions** when it ran — fix Source, then re-run. |
 | Workflow fails at `npm ci` | Ensure `package-lock.json` is committed (it is). |
 | 404 on the site | Check Settings → Pages → Source is **GitHub Actions**, not a branch. |
-| Blank white page | Hard-refresh (`Ctrl+Shift+R`) — old cached asset paths. |
+| Blank white page | See dedicated section above. |
 | Assets 404 / broken CSS | Never change `base` away from `'./'` in `vite.config.js`. |
 | First deploy pending | Actions can take 1–3 min; refresh the Actions tab. |
 | Changed Pages source later | Always keep it as **GitHub Actions**, or the workflow deploys get rejected. |
