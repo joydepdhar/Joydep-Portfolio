@@ -116,8 +116,3 @@ Edit `src/data/profile.js` — hero links, contact section, and footer all read
 from that one file.
 
 ---
-
-### Content integrity note
-
-Everything shown on this site comes from Joydep's CV. No publications, patents,
-grants, citations, or affiliations are claimed anywhere because none are listed.
